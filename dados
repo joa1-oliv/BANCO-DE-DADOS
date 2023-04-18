@@ -1,0 +1,23 @@
+DROP DATABASE Renner;
+CREATE DATABASE Renner;
+
+USE Renner;
+
+CREATE TABLE cliente(
+id_cliente INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+,endereço VARCHAR(255) NOT NULL 
+,email VARCHAR(255) NOT NULL
+,telefone INT NOT NULL 
+,data_nascimento DATE NOT NULL
+);
+
+CREATE TABLE compra(
+id_compra INT NOT NULL AUTO_INCREMENT PRIMARY KEY 
+,categoria VARCHAR(255) NOT NULL 
+,codigo_compra INT NOT NULL
+);
+
+CREATE TABLE produto(
+id_produto INT NOT NULL AUTO_INCREMENT PRIMARY KEY
+,
+);
